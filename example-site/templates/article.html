@@ -1,0 +1,13 @@
+{% include 'head.html' %}
+
+<article>
+<h1> {{ entry.title }} </h1>
+<div class="subtitle">
+{{ entry.date }}
+</div>
+
+{{ content|safe }}
+
+</article>
+
+{% include 'foot.html' %}

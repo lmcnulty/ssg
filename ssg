@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+
+import os
+import glob
+import yaml
+import datetime
+from dateutil.parser import parse as parse_date
+from subprocess import run, check_output
+from jinja2 import Template, Environment, FileSystemLoader
+
+
+def set_if_unset(dic, key, value):
+	if dic.get(key) == None: dic[key] = value
+
+def norm_date(d):
+	if type(d) is str:
+		return parse_date(d)
+	elif type(d) is datetime.datetime:
+		return d
+	elif type(d) is datetime.date:
+		return datetime.datetime.combine(d, datetime.datetime.min.time())
+
+with open('site.yaml') as f: blog = yaml.load(f.read()) or {}
+
+template_dir = blog.get('templates-dir') or 'templates'
+src_dir = blog.get('src-dir') or 'content'
+out_dir = blog.get('out-dir') or 'output'
+
+env = Environment()
+env.loader = FileSystemLoader('./' + template_dir)
+
+# Create output directory
+run(['rm', '-r', out_dir])
+run(['cp', '-r', src_dir, out_dir]) 
+
+
+entries = []
+
+for directory in next(os.walk(out_dir))[1] + [out_dir]:
+	full_dir = out_dir + "/" + directory
+	if directory == out_dir: full_dir = out_dir
+	indices = glob.glob(full_dir + "/index.*")
+	if len(indices) > 0:
+		
+		# Extract header to post.yaml if it doesn't exist
+		index_markup = indices[0]
+		post_yaml = full_dir + '/post.yaml'
+		if not os.path.isfile(post_yaml):
+			run(['mv', index_markup, index_markup + ".bak"])
+			header = ""
+			content = ""
+			in_header = None
+			with open(index_markup + ".bak", 'r') as f:
+				for line in f:
+					if line[0:4] == "....":
+						if in_header == None: in_header = True
+						elif in_header: in_header = False
+					else:
+						if in_header: header += line
+						else: content += line
+					''
+				''
+			''
+			with open(index_markup, 'w') as f: f.write(content)
+			with open(post_yaml, 'w') as f: f.write(header)
+		''
+
+		# Add to entries list
+		with open(post_yaml) as f:
+			entry = yaml.load(f.read()) or {}
+			entry['id'] = directory
+			set_if_unset(entry, 'author', blog.get('author'))
+			set_if_unset(entry, 'title', 'Untitled')
+			date = (
+				norm_date(entry.get("updated")) or 
+				norm_date(entry.get("date")) or 
+				norm_date("1970-01-01")
+			)
+			entry['datetime-date'] = date
+			set_if_unset(entry, "updated", date.isoformat())
+			if not entry.get('skip-index') and directory != out_dir:
+				entries.append(entry)
+		''
+
+		# Convert Markup to HTML
+		article_template = template_dir + "/article.html"
+		index = full_dir + "/index.html"
+		if index == index_markup:
+			run(["mv", index_markup, index_markup + ".orig"])
+			index_markup = index_markup + ".orig"
+		''
+		
+		template = 'article.html'
+		if directory == out_dir: template = 'index.html'
+
+		with open(index, "w") as output:
+			output.write(env.get_template(template).render(
+				content = check_output([
+					'pandoc', 
+					index_markup,
+					'-t', 'html'
+				]).decode("utf-8"),
+				entry = entry,
+				title = entry.get('title'),
+				blog = blog,
+				entries = sorted(
+					entries, 
+					key=lambda k: k['datetime-date'], 
+					reverse = True
+				)
+			))
+		''
+		run(
+			['rm', index_markup, post_yaml] 
+			+ glob.glob(full_dir +  "/*.bak")
+		)
+	''
+''
+
+with open(out_dir + '/' + blog['feed'], 'w') as f: 
+	f.write(env.get_template('feed.xml').render(
+		blog = blog,
+		updated = datetime.datetime.utcnow().isoformat(),
+		entries = entries
+	))
+''

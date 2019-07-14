@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>{{ title }}</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			max-width: 800px;
+			margin: auto;
+			font-family: serif;
+			font-size: 15pt;
+			background: white;
+			padding: 10px;
+			line-height: 1.4;
+		}
+		h1, .subtitle {
+			text-align: center;
+		}
+		h1 {
+			font-size: 150%;
+		}
+		footer {
+			font-size: 80%;
+		}
+	</style>
+</head>
+<body>
+<header>
+
+<b><a href="{{ blog.site_prefix }}">{{ blog.title }}</a></b>
+<span style="float: right">
+<a href="{{ blog.site_prefix }}/about">About</a>
+<a href="{{ site_prefix }}/atom.xml">Feed</a>
+<br>
+</span>
+</header>
+<main>
+

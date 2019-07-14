@@ -1,0 +1,8 @@
+author: "Mr. Example"
+author_email: "mister@example.org"
+title: "Example Blog"
+subtitle: "A Statically Generated Blog"
+site_prefix: "http://localhost:8000"
+feed: "atom.xml"
+date-format: "%B %d %Y"
+

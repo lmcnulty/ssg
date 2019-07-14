@@ -1,0 +1,35 @@
+{% include 'head.html' %}
+<style>
+li {
+	list-style: none;
+}
+ul {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.entry-listing {
+	display: flex;
+	justify-content: space-between;
+}
+</style>
+
+
+<h1> {{ title }} </h1>
+
+{{ content }}
+
+<ul>
+{% for e in entries %}
+	<li class="entry-listing">
+		<span class="title">
+		<a href="./{{ e.id }}">{{ e.title }}</a>
+		</span>
+
+		{% if e.date is defined %}
+		<span class="date">{{ e.date }}</span>
+		{% endif %}
+	</li>
+{% endfor %}
+</ul>
+
+{% include 'foot.html' %}

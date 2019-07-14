@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Example Blog</title>
+	<subtitle>A Statically Generated Blog</subtitle>
+	<link rel="self" href="http://localhost:8000/atom.xml"/>
+	<id>http://localhost:8000/atom.xml</id>
+	<updated>2019-07-14T20:10:41.210305</updated>
+	<author>
+		<name>Mr. Example</name>
+		<email>mister@example.org </email>
+	</author>
+	
+	<entry>
+		<title>a et corrupti quis ipsa</title>
+		<author>
+			<name>Mr. Example</name>
+			<email> </email>
+		</author>
+		<link href="http://localhost:8000/10"/>
+		<id>10</id>
+		<updated>2019-07-10</updated>
+		<summary>
+		
+		</summary>
+	</entry>
+	
+	<entry>
+		<title>exercitationem delectus ratione magni sit</title>
+		<author>
+			<name>Mr. Example</name>
+			<email> </email>
+		</author>
+		<link href="http://localhost:8000/4"/>
+		<id>4</id>
+		<updated>2019-07-4</updated>
+		<summary>
+		
+		</summary>
+	</entry>
+	
+	<entry>
+		<title>quibusdam et placeat in dolorem</title>
+		<author>
+			<name>Mr. Example</name>
+			<email> </email>
+		</author>
+		<link href="http://localhost:8000/1"/>
+		<id>1</id>
+		<updated>2019-07-1</updated>
+		<summary>
+		
+		</summary>
+	</entry>
+	
+	<entry>
+		<title>molestiae mollitia nisi laboriosam deserunt</title>
+		<author>
+			<name>Mr. Example</name>
+			<email> </email>
+		</author>
+		<link href="http://localhost:8000/3"/>
+		<id>3</id>
+		<updated>2019-07-3</updated>
+		<summary>
+		
+		</summary>
+	</entry>
+	
+	<entry>
+		<title>voluptas incidunt nihil culpa nisi</title>
+		<author>
+			<name>Mr. Example</name>
+			<email> </email>
+		</author>
+		<link href="http://localhost:8000/2"/>
+		<id>2</id>
+		<updated>2019-07-2</updated>
+		<summary>
+		
+		</summary>
+	</entry>
+	
+	<entry>
+		<title>autem voluptas est alias reiciendis</title>
+		<author>
+			<name>Mr. Example</name>
+			<email> </email>
+		</author>
+		<link href="http://localhost:8000/5"/>
+		<id>5</id>
+		<updated>2019-07-5</updated>
+		<summary>
+		
+		</summary>
+	</entry>
+	
+	<entry>
+		<title>hic tempora quae repellat aut</title>
+		<author>
+			<name>Mr. Example</name>
+			<email> </email>
+		</author>
+		<link href="http://localhost:8000/8"/>
+		<id>8</id>
+		<updated>2019-07-8</updated>
+		<summary>
+		
+		</summary>
+	</entry>
+	
+	<entry>
+		<title>error molestias et autem quod</title>
+		<author>
+			<name>Mr. Example</name>
+			<email> </email>
+		</author>
+		<link href="http://localhost:8000/7"/>
+		<id>7</id>
+		<updated>2019-07-7</updated>
+		<summary>
+		
+		</summary>
+	</entry>
+	
+	<entry>
+		<title>voluptatem similique non occaecati enim</title>
+		<author>
+			<name>Mr. Example</name>
+			<email> </email>
+		</author>
+		<link href="http://localhost:8000/9"/>
+		<id>9</id>
+		<updated>2019-07-9</updated>
+		<summary>
+		
+		</summary>
+	</entry>
+	
+	<entry>
+		<title>laudantium repudiandae ut pariatur sunt</title>
+		<author>
+			<name>Mr. Example</name>
+			<email> </email>
+		</author>
+		<link href="http://localhost:8000/6"/>
+		<id>6</id>
+		<updated>2019-07-6</updated>
+		<summary>
+		
+		</summary>
+	</entry>
+	
+</feed>
