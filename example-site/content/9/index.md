@@ -1,7 +1,7 @@
-.....
+---
 title: voluptatem similique non occaecati enim
 date: 2019-07-9
-.....
+---
 Magnam quis voluptatem unde aut et est eaque voluptas. Aut atque omnis minima deleniti molestias harum. Incidunt ea rerum quasi et. Rem magni sit aut occaecati cum explicabo. Est et est voluptatem voluptatem expedita reiciendis molestiae itaque.
 
 Aliquid aliquid est eum. Veniam deleniti ut repellat aut nam repellendus eveniet. Excepturi quia facere voluptas consectetur porro.

@@ -1,7 +1,7 @@
-.....
+---
 title: a et corrupti quis ipsa
 date: 2019-07-10
-.....
+---
 In qui velit accusantium laboriosam rem est tempore. Sit modi numquam deleniti. Aliquam voluptas exercitationem neque commodi voluptatem a qui cumque. Error odio aut est consequatur omnis nostrum quia. Dolorem aut itaque vero voluptatem aliquam. Quam ut ut asperiores et omnis earum.
 
 Omnis repudiandae perspiciatis tenetur unde qui sint omnis. Laudantium eligendi doloremque tempora nihil quis occaecati quod. Sint nisi blanditiis quo aliquam quo perferendis placeat rerum.

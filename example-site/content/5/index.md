@@ -1,7 +1,7 @@
-.....
+---
 title: autem voluptas est alias reiciendis
 date: 2019-07-5
-.....
+---
 Voluptatum adipisci quasi reiciendis eius. Delectus eligendi quae neque minima impedit ullam qui molestiae. Autem qui nihil eaque ea ipsa minima ad qui. Repellendus ut assumenda quo neque.
 
 Est voluptate quo enim similique sit maiores. Et quidem libero dignissimos alias facilis natus. Omnis illo ducimus illum nobis cum hic. Qui aperiam expedita voluptatem et sed perspiciatis odio. Ipsam totam facere sit a id dolores consequatur.

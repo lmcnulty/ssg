@@ -1,7 +1,7 @@
----
+.....
 title: About
 skip-index: true
----
+.....
 
 Sunt cum voluptatem dolorem et aut quia ducimus ut. Aut harum ex quasi molestias repellat numquam est expedita. Adipisci sit porro sit eligendi maiores omnis velit illum. Expedita in earum temporibus voluptatem dolorum. Quo distinctio culpa beatae eum ea delectus.
 

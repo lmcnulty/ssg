@@ -27,7 +27,7 @@ src_dir = blog.get('src-dir') or 'content'
 out_dir = blog.get('out-dir') or 'output'
 
 env = Environment()
-env.loader = FileSystemLoader('./' + template_dir)
+env.loader = FileSystemLoader(os.getcwd() + '/' + template_dir)
 
 # Create output directory
 run(['rm', '-r', out_dir])
@@ -52,7 +52,7 @@ for directory in next(os.walk(out_dir))[1] + [out_dir]:
 			in_header = None
 			with open(index_markup + ".bak", 'r') as f:
 				for line in f:
-					if line[0:4] == "....":
+					if line[0:3] == "---":
 						if in_header == None: in_header = True
 						elif in_header: in_header = False
 					else:
@@ -93,12 +93,18 @@ for directory in next(os.walk(out_dir))[1] + [out_dir]:
 		template = 'article.html'
 		if directory == out_dir: template = 'index.html'
 
-		with open(index, "w") as output:
+		#original_env = env
+		#env = Environment()
+		#env.loader = FileSystemLoader('../../' + template_dir)
+		original_dir = os.getcwd()
+		os.chdir(full_dir)
+		with open('index.html', "w") as output:
 			output.write(env.get_template(template).render(
 				content = check_output([
 					'pandoc', 
-					index_markup,
-					'-t', 'html'
+					index_markup.split("/")[-1],
+					'-t', 'html',
+					'--extract-media', '.'
 				]).decode("utf-8"),
 				entry = entry,
 				title = entry.get('title'),
@@ -110,6 +116,8 @@ for directory in next(os.walk(out_dir))[1] + [out_dir]:
 				)
 			))
 		''
+		os.chdir(original_dir)
+		#env = original_env
 		run(
 			['rm', index_markup, post_yaml] 
 			+ glob.glob(full_dir +  "/*.bak")

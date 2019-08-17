@@ -1,7 +1,7 @@
-.....
+---
 title: quibusdam et placeat in dolorem
 date: 2019-07-1
-.....
+---
 Unde quod minima placeat eveniet aut et adipisci. Occaecati alias aperiam ullam et. Amet exercitationem accusamus magni consequatur et vitae sapiente ut. Sed rerum est rerum dolore animi.
 
 Blanditiis magnam modi temporibus a et. Rem facere vel esse labore. Hic dicta eaque minima. Nihil in dolor iure dignissimos similique eius minus sed. Non eius quis omnis molestias ullam consequatur quod.

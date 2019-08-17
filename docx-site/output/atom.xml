@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Example Blog</title>
+	<subtitle>A Statically Generated Blog</subtitle>
+	<link rel="self" href="http://localhost:8000/atom.xml"/>
+	<id>http://localhost:8000/atom.xml</id>
+	<updated>2019-07-19T15:48:58.647403</updated>
+	<author>
+		<name>Mr. Example</name>
+		<email>mister@example.org </email>
+	</author>
+	
+	<entry>
+		<title>A App Inside an Article</title>
+		<author>
+			<name>Mr. Example</name>
+			<email> </email>
+		</author>
+		<link href="http://localhost:8000/app"/>
+		<id>app</id>
+		<updated>July 19, 2019</updated>
+		<summary>
+		
+		</summary>
+	</entry>
+	
+	<entry>
+		<title>An Article Written in a Word Processor</title>
+		<author>
+			<name>Mr. Example</name>
+			<email> </email>
+		</author>
+		<link href="http://localhost:8000/article"/>
+		<id>article</id>
+		<updated>July 19, 2019</updated>
+		<summary>
+		
+		</summary>
+	</entry>
+	
+</feed>

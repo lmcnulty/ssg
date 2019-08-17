@@ -1,7 +1,7 @@
-.....
+---
 title: laudantium repudiandae ut pariatur sunt
 date: 2019-07-6
-.....
+---
 Eos aut distinctio doloribus qui quasi quaerat impedit voluptas. Laboriosam dolor consequuntur id odio est quia quo ex. Deleniti ut ab ab laudantium et dolores non.
 
 Dolorum iure exercitationem fugiat sit ut neque. Et aut commodi sed explicabo. Repellendus laboriosam ut laudantium reiciendis sed amet. Soluta et consequatur tempora ut aut vitae ut. Quasi corporis unde animi ipsam laudantium.

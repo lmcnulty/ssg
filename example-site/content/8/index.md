@@ -1,7 +1,7 @@
-.....
+---
 title: hic tempora quae repellat aut
 date: 2019-07-8
-.....
+---
 Assumenda laudantium id quam nulla accusamus est enim. Non et et voluptas maiores cum fugiat eum libero. Aut laudantium cumque magnam.
 
 Atque voluptatem dolor odio occaecati at nulla rerum. Quas distinctio vero voluptatem voluptatem labore. Est suscipit tenetur consequuntur delectus cumque. Consequatur voluptatibus voluptate adipisci. Consequatur repellendus tempora ut nam saepe ut.

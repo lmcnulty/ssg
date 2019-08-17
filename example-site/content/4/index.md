@@ -1,7 +1,7 @@
-.....
+---
 title: exercitationem delectus ratione magni sit
 date: 2019-07-4
-.....
+---
 Similique nobis commodi ipsam. Cumque omnis repellat veniam enim perferendis sint. Rerum expedita aut et aut rem. Odio sunt ipsam est architecto. Cupiditate eum odio vitae et. Modi voluptatem dicta in iusto molestias minus esse.
 
 Voluptatem vitae veniam assumenda sed voluptas. Mollitia quo eveniet magni. Est ea culpa et voluptas perferendis voluptatem quaerat. Soluta inventore nostrum illum eius repellat dolorem omnis. Non qui non fuga. Quia animi aut ipsam repellat.
